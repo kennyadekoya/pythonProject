@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    * {
+    font-family: 'lato', sans-serif;
+    }
+    body{
+    background-color: white;
+    }
+
+    .SignUp-div{
+    margin:100px auto;
+    width:550px;
+    background-color:#ffff;
+    padding:60px;
+    border-color:#142F69;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    }
+
+    .center {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 90%;
+        }
+
+     .title, .sub-title{
+        text-align: center;
+        color: black;
+     }
+
+     .title {
+     font-weight: bolder;
+     font-size: 20px;
+     margin-top: 15px;
+     }
+
+     .form{
+     width:100%
+     margin-top: 30px;
+     }
+
+     .form input{
+     font-size: 18px;
+     padding: 1px 0.4px 1px 1px;
+     border:none;
+     border-width: 10px 20px 10px 5px;
+     outline: none;
+     background: none;
+     }
+
+    .username, .semester, .lastname, .firstname{
+    display: block;
+    border-radius: 10px;
+    border: 1px solid rgba(0.9,0,0,0.2);
+    padding: 15px;
+    margin: 5px 0;
+    }
+
+    .form svg {
+    height: 25px;
+    margin-bottom:-5px;
+    margin-left: 10px;
+    margin-right: 5px;
+    }
+
+    .options {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       padding: 5px 0px;
+       margin-bottom: 30px;
+    }
+
+    button.signin-btn {
+       width:100%;
+       padding: 12px 10px;
+       border: none;
+       font-size: 18px;
+       border-radius: 30px;
+       background-color: #142F69;
+       color: white;
+       margin-top: 4px;
+       text-decoration: none;
+       display: inline-block;
+       cursor: pointer;
+       }
+
+       .sign-up{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        }
+
+        .alert {
+          padding: 20px;
+          background-color: #f44336;
+          color: white;
+          text-align:center;
+          }
+        .b2facultypage{
+               text-align:center;
+        }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title> Individual Student Data Generator</title>
+
+</head>
+<body>
+    <div class="SignUp-div">
+        <img src="https://givingmatters.civicore.com/?downloadFile=1&table=organizations&field=logo&check=3604bbb743eff744ff15fa2dceeda504&key=1288&openGraph=1" alt="" class="center">
+
+        <div class = "title">Individual Student Generator</div>
+        <div id="modal-signup" class="form">
+            <form action='singlestudentchecker' id="signup-form" method = "POST">
+             <div class="username">
+                    <svg class="svg-icon" viewBox="0 0 20 20">
+							<path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"></path>
+						</svg>
+                    <input name="EMAIL" type=text" id="signup-email" placeholder="Fisk Email" size="50"  value={{fisk_email}} required>
+                </div>
+
+                <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <strong>Alert!</strong> This student hasn't inputted any information
+
+    <div class="b2facultypage">
+    <a href = "faculty-b2facultypage" href="#" style='color: black; text-align:center'> Return to Faculty Page </a>
+</div>
+</div>
+                </form>
+
+
+</body>
+</html>
+

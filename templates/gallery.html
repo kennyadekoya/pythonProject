@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200&family=Ramabhadra&family=Tiro+Gurmukhi&display=swap" rel="stylesheet">
+    <script src="auth.js"></script>
+<!--im using css in my html file instead of seperating it becuase it wasnt working when i tried to seperate the two files-->
+<!--style is used to conducty css functio0ns-->
+<!----------------------CSS FUNCTIONS------------------------->
+<style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+body {
+    background-color: black;
+}
+* {box-sizing:border-box}
+/* UTILITIES */
+<!--* {-->
+<!--&lt;!&ndash; margin: 0;&ndash;&gt;-->
+<!--&lt;!&ndash; padding: 0;&ndash;&gt;-->
+<!-- box-sizing: border-box;-->
+<!--}-->
+<!--body {-->
+<!-- font-family: cursive;-->
+<!--}-->
+
+
+.fisklogo{
+    margin-right:-90px;
+}
+
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding-top: -20em;
+ padding-bottom: -20em;
+ background-color: #142F69;
+ color: #fff;
+}
+
+.nav-links a {
+ color: white;
+}
+
+
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 20px;
+<!-- font-color: black;-->
+}
+.menu li:hover {
+ background-color: #f0b91c;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px 14px;
+}
+.menu:hover {
+<!--  color: white;-->
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+body{
+    background-color: white
+    }
+
+/* DROPDOWN MENU */
+.services {
+ postion: absolute;
+ margin-right: 10px;
+}
+.dropdown {
+ background-color: grey;
+ padding: 1em 0;
+ font-size: 16px;
+ position: absolute; /*WITH RESPECT TO PARENT*/
+ display: none;
+ border-radius: 8px;
+ top: 60px;
+ right:10px
+ }
+
+.dropdown li + li {
+ margin-top: 10px;
+}
+.dropdown li {
+ padding: 0.5em 1em;
+ width: 5.4em;
+ text-align: center;
+<!-- font-size: 2px;-->
+}
+.dropdown li:hover {
+ background-color: darkgrey;
+}
+.services:hover .dropdown {
+ display: block;
+}
+
+.patterns {
+  height: 30vh;
+}
+
+
+h1 {
+    color: #142F69;
+    font-family: 'Ramabhadra', sans-serif;
+    font-size: 40px;
+    color: #142F69;
+    text-align: center;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top:5px;
+  padding-bottom: 5px;
+  background-color: #142F69;
+  color: white;
+  font-size:12px;
+}
+.svg-icon {
+  width: 2em;
+  height: 2em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: white;
+}
+
+.svg-icon circle {
+  stroke: white;
+  stroke-width: 1;
+}
+
+</style>
+
+<!----------------------HTML FUNCTIONS------------------------>
+</head>
+    <title>Gallery</title>
+<body>
+<div>
+
+    <div>
+        <div class="title-container">
+            <h1>Gallery</h1>
+            </div>
+    </div>
+    <div class="row">
+      <div class="column">
+<!--          downtown nashville-->
+        <img src="https://imagizer.imageshack.com/v2/320x240q90/923/1onByu.png">
+
+                <!--       roland martin   -->
+        <img src="https://imagizer.imageshack.com/v2/320x240q90/923/mU1wkX.png">
+
+
+          <!--          3 people-->
+        <img src="https://imagizer.imageshack.com/v2/320x240q90/923/4nBG1h.png">
+
+      </div>
+
+      <div class="column">
+           <!--          fisk view-->
+        <img src="https://imagizer.imageshack.com/v2/320x240q90/924/IjURd3.jpg">
+   <!--          fredriksen-->
+        <img src="https://imagizer.imageshack.com/img924/9387/MaJaSc.png">
+<!--           &lt;!&ndash;          fisk view&ndash;&gt;-->
+<!--        <img src="https://imagizer.imageshack.com/v2/320x240q90/924/IjURd3.jpg">-->
+<!--          girl with the shoes-->
+        <img src="https://imagizer.imageshack.com/img923/1710/Bvw3Lc.jpg" >
+      </div>
+
+      <div class="column">
+<!--   &lt;!&ndash;          jub&ndash;&gt;-->
+<!--        <img src="https://imagizer.imageshack.com/v2/280x200q90/922/7f4jS8.png">-->
+                    <!--          hat-->
+        <img src="https://imagizer.imageshack.com/v2/320x240q90/924/zg3itp.png">
+
+
+          <!--        rsg folks -->
+        <img src="https://imagizer.imageshack.com/v2/320x240q90/922/vWzttm.png">
+                    <!--          jada-->
+        <img src="https://imagizer.imageshack.com/v2/320x240q90/922/OuefWZ.jpg">
+     </div>
+
+      <div class="column">
+<!--          new building -->
+         <img src="https://imagizer.imageshack.com/v2/320x240q90/922/paHMj1.jpg">
+<!--          o dude-->
+        <img src="https://imagizer.imageshack.com/v2/320x240q90/924/C9bli9.png">
+<!--          other people-->
+        <img src="https://imagizer.imageshack.com/v2/320x240q90/924/44yOY6.png">
+
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+    <footer>
+        <svg class="svg-icon" viewBox="0 0 20 20">
+            <a xlink:href="https://www.instagram.com/fisk_ocpd/">
+            <path fill="none" d="M14.52,2.469H5.482c-1.664,0-3.013,1.349-3.013,3.013v9.038c0,1.662,1.349,3.012,3.013,3.012h9.038c1.662,0,3.012-1.35,3.012-3.012V5.482C17.531,3.818,16.182,2.469,14.52,2.469 M13.012,4.729h2.26v2.259h-2.26V4.729z M10,6.988c1.664,0,3.012,1.349,3.012,3.012c0,1.664-1.348,3.013-3.012,3.013c-1.664,0-3.012-1.349-3.012-3.013C6.988,8.336,8.336,6.988,10,6.988 M16.025,14.52c0,0.831-0.676,1.506-1.506,1.506H5.482c-0.831,0-1.507-0.675-1.507-1.506V9.247h1.583C5.516,9.494,5.482,9.743,5.482,10c0,2.497,2.023,4.52,4.518,4.52c2.494,0,4.52-2.022,4.52-4.52c0-0.257-0.035-0.506-0.076-0.753h1.582V14.52z"></path>
+            </a>
+        </svg>
+        <p>
+            Office Number: <a href="tel:615-329-8718" style='color: white;'> 615-329-8718 </a> | Email: <a href="mailto:careerplanning@fisk.edu" style='color: white;'> Careerplanning@fisk.edu
+        </p>
+    </footer>
+    </div>
+
+</body>
+</html>
+<!---->
+

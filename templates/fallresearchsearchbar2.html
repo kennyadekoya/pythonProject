@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.login-div{
+    margin:100px auto;
+    width:550px;
+    background-color:#ffff;
+    padding:60px;
+    border-color:#142F69;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+}
+
+form.fallresearchsearchbar2 input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.fallresearchsearchbar2 button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background:#142F69;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.fallresearchsearchbar2 button:hover {
+  background: #f0b91c;
+}
+
+form.fallresearchsearchbar2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+<!--.title{-->
+<!--    text-align: center;-->
+<!--    font-family: Helvetica, sans-serif;-->
+<!--    font-size: 15px;-->
+<!--    margin-top: 150px;-->
+<!--    color: #142F69-->
+<!--}-->
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+    }
+
+ .title, .sub-title{
+    text-align: center;
+    color: #142F69;
+ }
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: #142F69;
+  color: white;
+  font-size:12px;
+}
+</style>
+</head>
+<body>
+
+<div class="title">
+     <div class="login-div">
+        <img src="https://givingmatters.civicore.com/?downloadFile=1&table=organizations&field=logo&check=3604bbb743eff744ff15fa2dceeda504&key=1288&openGraph=1" alt="" class="center">
+
+    <h1>Student Search Bar</h1>
+
+<form class="fallresearchsearchbar2" id="searchbar-form" method = "POST">
+  <input name="EMAIL" type="text" id="student_searchbar" placeholder="Enter the Student's Fisk Email" value={{email}} required>
+    <button class="button--search">
+    <a class="fa fa-search" href="searchbar" href="#" style='color: white;' ></a>
+</button>
+
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+  <strong>Alert!</strong> {{studentfullname}} has already inputted their internship information
+    <p>                        </p>
+    <div class="b2facultypage">
+    <a href = "faculty-b2facultypage" href="#" style='color: black;'> Return to Faculty Page </a>
+</div>
+</div>
+
+</form>
+
+<div class="footer">
+    <p>
+        Contact Us
+ </p>
+ <p>
+     Office Number: <a href="tel:615-329-8718" style='color: white;'> 615-329-8718 </a> | Email: <a href="mailto:careerplanning@fisk.edu" style='color: white;'> Careerplanning@fisk.edu
+ </p>
+</div>
+</body>
+</html>
+

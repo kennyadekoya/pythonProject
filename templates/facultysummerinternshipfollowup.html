@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+* {box-sizing:border-box}
+/* UTILITIES */
+<!--* {-->
+<!-- margin: 0;-->
+<!-- padding: 0;-->
+<!-- box-sizing: border-box;-->
+<!--}-->
+<!--body {-->
+<!-- font-family: cursive;-->
+<!--}-->
+
+html,body{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+    letter-spacing: 3px;
+     justify-content: space-between;
+}
+
+
+/* element */
+
+.let_space{
+    letter-spacing: 2px;
+}
+
+
+.c_grid{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 2vmax;
+}
+
+.grid{
+    display: grid;
+    grid-gap: 2vmax;
+}
+
+
+.box2{
+    grid-template-columns: 1fr 1fr;
+}
+
+.box3{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* element */
+
+.table_cont{
+    overflow-x: scroll;
+    width: 70vw;
+}
+
+table {
+    border-collapse: collapse;
+    letter-spacing: 3px;
+    /* width: 100%; */
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 1vmax;
+    width: fit-content;
+}
+
+form{
+    margin: 2vmax 10vmax;
+    padding:3vmax;
+    border: 1px solid #dddddd;
+}
+
+label{
+    font-size: 1.5vmax;
+}
+
+input{
+    padding:1vmax;
+    font-size: 1.3vmax;
+    border: 1px solid #dddddd;
+    outline: none;
+}
+
+select{
+    padding:1vmax;
+    font-size: 1.3vmax;
+    border: 1px solid #dddddd;
+    outline: none;
+    letter-spacing: 3px;
+}
+
+option{
+    font-size: 1.5vmax;
+    letter-spacing: 3px;
+}
+
+.file_submit{
+  margin-top: 1vmax;
+  border: 1px solid #55acee;
+  outline: none;
+  background-color: #55acee;
+  color: white;
+  padding: 1vmax;
+  cursor: pointer;
+  transition: 0.3s;
+  letter-spacing: 3px;
+}
+
+.file_submit:hover{
+  background-color: white;
+  color: #55acee
+}
+
+p1 {
+   text-align: left;
+   margin-right: 22px
+ }
+
+
+.fisklogo{
+    margin-right:-90px;
+}
+
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding-top: -20em;
+ padding-bottom: -20em;
+ background-color: #142F69;
+ color: #fff;
+}
+
+.nav-links a {
+ color: white;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  text-align: right;
+  width: 17;
+  position: absolute;
+  right: 1px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  text-align: right;
+  width: 17;
+  position: absolute;
+  right: 238px;
+  font-size: 12px;
+<!--  text-align: right;-->
+}
+
+.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.p{
+    text-align: right;
+}
+
+.container2 {
+  padding: 2px 16px;
+}
+
+
+.title{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 50px;
+    color: #142F69
+}
+
+@keyframes gradient {
+  0% {
+    background: radial-gradient(circle at center, rgba( 255, 125 , 125, 0 ) 0%, #fff 0%, #fff 100%);
+  }
+  25% {
+    background: radial-gradient(circle at center, rgba( 255, 125, 125, 0.3 ) 24%, #fff 25%, #fff 100%);
+  }
+  50% {
+    background: radial-gradient(circle at center, rgba( 255, 125, 125, 0.5 ) 49%, #fff 50%, #fff 100%);
+  }
+  75% {
+    background: radial-gradient(circle at center, rgba( 255, 125, 125, 0.8 ) 74%, #fff 75%, #fff 100%);
+  }
+  100% {
+    color: #fff;
+    background: radial-gradient(circle at center, #f88 99%, #fff 100%, #fff 100%);
+  }
+}
+
+.button--fall {
+  margin-left: calc( 50vw - 175px );
+  margin-top: calc( 3vh - 30px )
+  width: 350px;
+  height: 100px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #142F69;
+  box-shadow: 0 6px 6px #142F69;
+  outline: none;
+}
+.button--fall:active {
+  /* set time duration to your needs */
+  animation: gradient 100ms;
+  background: #f0b91c;
+  color: #fff;
+  box-shadow: none;
+}
+
+button {
+  margin-left: calc( 50vw - 175px );
+  margin-top: calc(15vh - 49px);
+  width: 350px;
+  height: 100px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #142F69;
+  box-shadow: 0 6px 6px #142F69;
+  outline: none;
+}
+button:active {
+  /* set time duration to your needs */
+  animation: gradient 100ms;
+  background: #f0b91c;
+  color: #fff;
+  box-shadow: none;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: #142F69;
+  color: white;
+  font-size:12px;
+}
+
+.input_data, .retrieve_data{
+    color: #142F69;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>FacultyPage</title>
+</head>
+<body>
+
+
+<div id="navigationbar">
+     <nav class="navbar">
+         <div>
+             <a href="https://www.fisk.edu/about/administration/division-of-student-affairs/career-planning-and-development/uncf-career-pathways-initiative/training-and-development/" href="#" id="fisklogo"><img src="https://imagizer.imageshack.com/img922/9246/ILfQWc.png" height="82px" width="108px"></a>
+         </div>
+<!--             <p>{{email}}</p>-->
+         <p1>{{firstname}} {{lastname}} </p1>
+          <p1>Summer</p1>
+<!--          <p1>Faculty</p1>-->
+
+     </nav>
+    </div>
+</div>
+
+
+<!--<div class="card">-->
+<!--  <div class="container">-->
+<!--      <p>{{fiskemail}}</p>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<!--<div class="card2">-->
+<!--  <div class="container2">-->
+<!--    <p>Email:</p>-->
+<!--    <p>Student Number: </p>-->
+<!--    <p>Major:</p>-->
+<!--&lt;!&ndash;    <p>Classification:</p>&ndash;&gt;-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<div class="title">
+    <h1>Select An Opportunity<h1>
+</div>
+
+
+
+<!--<button class="button&#45;&#45;fall" href="fall" href="#"  onclick="window.location.href = 'https://stackhowto.com';">-->
+<button class="button--internship">
+    <a class="internshipinfo" href="facultysummer_internship_info" href="#">Summer Internship Information</a>
+<!--  Fall-->
+</button>
+
+
+<button class="button--retrieve">
+    <a class="researchinfo" href="facultysummerresearch_survey" href="#">Research Experience</a>
+
+<!--  Fall-->
+</button>
+
+
+<div class="footer">
+    <p>
+        Contact Us
+ </p>
+ <p>
+     Office Number: <a href="tel:615-329-8718" style='color: white;'> 615-329-8718 </a> | Email: <a href="mailto:careerplanning@fisk.edu" style='color: white;'> Careerplanning@fisk.edu
+ </p>
+</div>

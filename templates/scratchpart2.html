@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student SIGN IN PAGE</title>
+</head>
+<body>
+<style>
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.center {
+border: 5px solid #FFFF00;
+text-align: center;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 25px 0 12px 0;
+
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  postion: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+</style>
+
+<!--<h1>Welcome to the student sign in page</h1>-->
+<!--<p> it worked!!!!</p>-->
+<!-- &lt;!&ndash; SIGN UP MODAL &ndash;&gt;-->
+<!--  <div id="modal-signup" class="modal">-->
+<!--    <div class="modal-content">-->
+<!--      <h4>Sign up</h4><br />-->
+<!--      <form id="signup-form">-->
+<!--        <div class="input-field">-->
+<!--          <input type="email" id="signup-email" required />-->
+<!--          <label for="signup-email">Email address</label>-->
+<!--        </div>-->
+<!--        <div class="input-field">-->
+<!--          <input type="password" id="signup-password" required />-->
+<!--          <label for="signup-password">Choose password</label>-->
+<!--        </div>-->
+<!--        <button class="btn yellow darken-2 z-depth-0">Sign up</button>-->
+<!--      </form>-->
+<!--    </div>-->
+<!--  </div>-->
+
+  <!-- LOGIN MODAL -->
+<!--  <div id="modal-login" class="modal">-->
+<!--    <div class="modal-content">-->
+<!--      <h4>Login</h4><br />-->
+<!--      <form id="login-form">-->
+<!--        <div class="input-field">-->
+<!--          <input type="email" id="login-email" required />-->
+<!--          <label for="login-email">Email address</label>-->
+<!--        </div>-->
+<!--        <div class="input-field">-->
+<!--          <input type="password" id="login-password" required />-->
+<!--          <label for="login-password">Your password</label>-->
+<!--        </div>-->
+<!--        <button class="btn yellow darken-2 z-depth-0">Login</button>-->
+<!--      </form>-->
+<!--    </div>-->
+<!--  </div>-->
+<form action="action_page.php" method="post">
+  <div class="fisklogog">
+    <img src="https://givingmatters.civicore.com/?downloadFile=1&table=organizations&field=logo&check=3604bbb743eff744ff15fa2dceeda504&key=1288&openGraph=1" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="Remember Me"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+  <!-- Compiled and minified JavaScript -->
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
+<!--  <script src="scripts/auth.js"></script>-->
+<!--  <script src="scripts/index.js"></script>-->
+</body>
+</html>
+
+
+
+
+font
+
+<!--&lt;!&ndash;html {&ndash;&gt;-->
+<!--&lt;!&ndash;    height:100%;&ndash;&gt;-->
+<!--&lt;!&ndash; }&ndash;&gt;-->
+
+<!--body {-->
+<!--&lt;!&ndash;   background-color:  #142F69;&ndash;&gt;-->
+<!--    background-color: #fffff;-->
+<!--}-->
+<!--* {box-sizing:border-box}-->
+
+<!--/* Slideshow container */-->
+<!--.slideshow-container {-->
+<!--  max-width: 1000px;-->
+<!--  position: relative;-->
+<!--  margin: auto;-->
+<!--  border: 5px solid black;-->
+<!--  margin-top:-40px;-->
+<!--}-->
+
+<!--/* Hide the images by default */-->
+<!--.mySlides {-->
+<!--  display: none;-->
+<!--}-->
+
+<!--.active, .dot:hover {-->
+<!--  background-color: #717171;-->
+<!--}-->
+
+<!--/* Fading animation */-->
+<!--.fade {-->
+<!--  animation-name: fade;-->
+<!--  animation-duration: 1.5s;-->
+<!--}-->
+
+<!--@keyframes fade {-->
+<!--  from {opacity: .4}-->
+<!--  to {opacity: 1}-->
+<!--}
+
+
+import { initializeApp   } from 'https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js;
+import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js';
+import { getFirestore, collection, getDocs, getDoc } from 'https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js';
+
+
+const firebaseConfig = initializeApp ({
+    apiKey: "AIzaSyB9DaUxj2YCDMrNTOSgxpF49e6B5lCgOMA",
+    authDomain: "datahub-21e7e.firebaseapp.com",
+    databaseURL: "https://datahub-21e7e-default-rtdb.firebaseio.com",
+    projectId: "datahub-21e7e",
+    storageBucket: "datahub-21e7e.appspot.com",
+    messagingSenderId: "166143497203",
+    appId: "1:166143497203:web:4cf11ad5cfec0214ee7886",
+    measurementId: "G-6Z3W87LP23"
+  )};
+  const auth = getAuth(firebaseApp);
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(firebaseApp);
+
+  onAuthStateChanged(auth, user=> {
+    if(user ≠ null) {
+        console.log('LOGGED IN!!!!!!!!!!!!!!!');
+    }else {
+        console.log('NO USER:///')
+    }
+  });
+
+
+

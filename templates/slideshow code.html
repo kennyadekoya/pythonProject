@@ -1,0 +1,151 @@
+   <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="https://cdn.uncf.org/wp-content/uploads/fisk-chapel-1440.jpg" style="width:100%">
+    </div>
+    <div class="mySlides fade">
+      <img src="https://imagizer.imageshack.com/img924/5826/2G59lq.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="https://imagizer.imageshack.com/img924/8683/unX48j.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://imagizer.imageshack.com/img923/5387/iY29tO.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="https://imagizer.imageshack.com/img923/6435/3GSX3v.jpg" style="width:100%">
+    </div>
+    <!--<div class="mySlides fade">-->
+    <!--    <img src="https://ucarecdn.com/b4628bc9-1bb4-4630-9d63-004789a86603/2A82E31F290D406C9C6CE9F43F0480CE.HEIC" style="width:100%">-->
+    <!--</div>-->
+
+    </div>
+    <!--<br>-->
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+
+    </div>
+
+    <script>
+    <!--gotten from w3shools-->
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+
+
+
+
+
+   <nav class="navbar">
+     <!-- LOGO -->
+     <div class="logo">MUO</div>
+     <!-- NAVIGATION MENU -->
+     <ul class="nav-links">
+       <!-- NAVIGATION MENUS -->
+       <div class="menu">
+         <li class="services">
+           <a href="/">Sign In</a>
+           <!-- DROPDOWN MENU -->
+           <ul class="dropdown">
+             <li><a href="/">Student Sign-In</a></li>
+             <li><a href="/">Faculty Sign-In</a></li>
+           </ul>
+         </li>
+       </div>
+     </ul>
+   </nav>
+</div>
+
+
+
+
+
+
+<style>
+
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+
+/* NAVBAR STYLING */
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+ background-color: #f0b91c;
+ color: #fff;
+}
+.nav-links a {
+ color: #fff;
+}
+/* LOGO */
+.logo {
+ font-size: 32px;
+}
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+.menu li:hover {
+ background-color: #142F69;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px 14px;
+}
+/* DROPDOWN MENU */
+.services {
+ position: relative;
+}
+.dropdown {
+ background-color: rgb(1, 139, 139);
+ padding: 1em 0;
+ position: absolute; /*WITH RESPECT TO PARENT*/
+ display: none;
+ border-radius: 8px;
+ top: 35px;
+}
+.dropdown li + li {
+ margin-top: 10px;
+}
+.dropdown li {
+ padding: 0.5em 1em;
+ width: 8em;
+ text-align: center;
+}
+.dropdown li:hover {
+ background-color: #4c9e9e;
+}
+.services:hover .dropdown {
+ display: block;
+}
+
