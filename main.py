@@ -4,6 +4,8 @@ from flask import Flask, render_template, request
 
 from flask import Flask, redirect, url_for, render_template, request
 
+import requests
+import configparser
 from flask import redirect
 from pyrebase import pyrebase
 import pyrebase
@@ -29,6 +31,7 @@ firebaseConfig = {
 
 app = Flask(__name__)
 app.config['SERVER_NAME'] = 'localhost:5000'
+
 
 
 # defining the url or route for the website
@@ -7048,5 +7051,7 @@ def individualdatareport():
 
 
 
+# if __name__ == "__main__":
+#     app.run(debug=True)
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0", port=5000)
